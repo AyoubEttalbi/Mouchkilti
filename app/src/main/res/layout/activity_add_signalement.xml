@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Projet       : Mouchkilti - Signalement de problèmes urbains
+  Fichier      : activity_add_signalement.xml 
+  Description  : Interface graphique de déclaration d'un nouveau signalement
+  Responsable(s) : 
+    - Ayoub ETTALBI
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_add"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_title"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catégorie du problème :"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_description"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etLocalisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_location"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/urgency_level"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup
+            android:id="@+id/rgUrgence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbFaible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/urgency_low" />
+
+            <RadioButton
+                android:id="@+id/rbMoyenne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/urgency_medium"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbUrgente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/urgency_high" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_select_date" />
+
+            <TextView
+                android:id="@+id/tvDateAffichee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 22/11/2026"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_report"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

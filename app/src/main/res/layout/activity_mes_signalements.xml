@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Projet       : Mouchkilti - Signalement de problèmes urbains
+  Fichier      : activity_mes_signalements.xml 
+  Description  : Interface graphique de suivi personnel des signalements
+  Responsable(s) : 
+    - Ayoub ETTALBI
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_light"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvMesSignalementsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_mes_signalements"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvMesSignalementsSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivi en temps réel de vos déclarations :"
+        android:textSize="13sp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvMesSignalements"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/grey_light"
+        android:dividerHeight="8dp" />
+
+    <Button
+        android:id="@+id/btnFermerMesSig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fermer"
+        android:backgroundTint="@color/grey_dark"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
