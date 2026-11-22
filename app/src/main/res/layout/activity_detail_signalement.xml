@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Projet       : Mouchkilti - Signalement de problèmes urbains
+  Fichier      : activity_detail_signalement.xml 
+  Description  : Interface graphique de consultation détaillée d'un signalement
+  Responsable(s) : 
+    - Yassine Lamghari El Kossori
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_light"
+    android:padding="16dp">
+
+    <!-- Cadre simulant une photo du problème -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#CFD8DC"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ivDetailPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="[Photo du constat citoyen]"
+            android:textColor="@color/grey_dark"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvDetailTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titre du signalement"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tvDetailCategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catégorie : Voirie"
+        android:textSize="14sp"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvDetailLocalisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lieu : Bd Zerktouni, Casablanca"
+        android:textSize="13sp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvDetailDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date : 20/11/2026"
+        android:textSize="13sp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvDetailStatut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut : En attente"
+        android:textStyle="bold"
+        android:textColor="@color/accent"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvDetailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description détaillée du problème urbain..."
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSoutenir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_support"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnActionsPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options / Actions supplémentaires (PopupMenu)"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRetourDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fermer"
+        android:backgroundTint="@color/grey_dark" />
+
+</LinearLayout>
