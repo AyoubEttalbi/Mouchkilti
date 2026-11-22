@@ -1,0 +1,12 @@
+<!--
+  Projet       : Mouchkilti - Signalement de problèmes urbains
+  Fichier      : rounded_button.xml
+  Description  : Forme arrondie avec fond de couleur pour les boutons
+  Responsable(s) :
+    - Ayoub ETTALBI
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary" />
+    <corners android:radius="8dp" />
+</shape>

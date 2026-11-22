@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="accent">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_light">#F5F5F5</color>
+    <color name="grey_dark">#616161</color>
+    <color name="status_pending_color">#FF9800</color>
+    <color name="status_in_progress_color">#2196F3</color>
+    <color name="status_resolved_color">#4CAF50</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mouchkilti</string>
+    <string name="title_login">Connexion Citoyenne</string>
+    <string name="title_liste">Signalements Urbains</string>
+    <string name="title_carte">Carte des Incidents</string>
+    <string name="title_add">Signaler un Problème</string>
+    <string name="title_details">Détails du Signalement</string>
+    <string name="title_mes_signalements">Mes Signalements</string>
+
+    <string name="btn_login">Se Connecter</string>
+    <string name="btn_add_report">Publier le signalement</string>
+    <string name="btn_support">Je confirme ce problème (+1)</string>
+    <string name="btn_select_date">Sélectionner la date</string>
+    <string name="btn_take_photo">Prendre une photo</string>
+
+    <string name="hint_email">Adresse Email</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_title">Titre du problème (ex: Nid-de-poule)</string>
+    <string name="hint_description">Description détaillée</string>
+    <string name="hint_location">Lieu ou adresse approximative</string>
+
+    <string name="urgency_level">Niveau d\'urgence :</string>
+    <string name="urgency_low">Faible</string>
+    <string name="urgency_medium">Moyenne</string>
+    <string name="urgency_high">Urgente</string>
+
+    <string name="status_pending">En attente</string>
+    <string name="status_in_progress">En cours de traitement</string>
+    <string name="status_resolved">Résolu</string>
+
+    <string name="menu_refresh">Actualiser</string>
+    <string name="menu_map">Voir la Carte</string>
+    <string name="menu_my_reports">Mes Signalements</string>
+    <string name="menu_logout">Déconnexion</string>
+</resources>
